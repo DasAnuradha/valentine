@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.balloons{
+    position: absolute;
+    inset: 0;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.balloons img{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    bottom: -160px;
+    
+    user-select: none;
+    cursor:grab;
+    animation: flying 15s linear infinite;
+}
+
+.balloons img:nth-child(1){
+    left:57%;
+    animation-delay: 0.7s;
+    animation-duration: 10s;
+    /* bottom: 100px; */
+
+}
+.balloons img:nth-child(2){
+    left: 58%;
+    animation-delay: 3s;
+    animation-duration: 13s;
+    /* bottom: 600px; */
+}
+.balloons img:nth-child(3){
+    left: 57%;
+    animation-delay: 7s;
+    animation-duration: 20s;
+    /* bottom: 400px; */
+}
+.balloons img:nth-child(4){
+    left: 55%;
+    animation-delay: 11s;
+    animation-duration: 16s;
+    /* bottom: 300px; */
+}
+
+.balloons img:nth-child(5){
+    left: 58%;
+    animation-delay: 14s;
+    animation-duration: 20s;
+    /* bottom: 400px; */
+}
+.balloons img:nth-child(6){
+    left:56%;
+    animation-delay: 19s;
+    animation-duration: 16s;
+    /* bottom: 300px; */
+}
+
+@keyframes flying{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateY(-1000px);
+    }
+}
